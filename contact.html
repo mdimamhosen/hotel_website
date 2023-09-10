@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/6fe2253753.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel BT | Contact</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav id="nav-bar" class="container">
+          <div class="nav-bar-heading">
+            <h1><a href="./index.html">HBT</a></h1>
+          </div>
+          <div class="nav-bar-link">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="./about.html">About</a></div>
+            <div><a href="./contact.html">Contact</a></div>
+          </div>
+        </nav>
+      </header>
+      <section id="contact">
+        <div class="contact-container">
+          <h1 class="contact-heading">
+            <span class="heading-special">Contact</span> Us
+          </h1>
+          <p class="contact-subheading">
+            Please fill out the form below to contact us
+          </p>
+          <form action="process.php" class="contact-form">
+            <div class="form-grp">
+              <label class="label" for="name">Name</label><br />
+              <input class="input" type="text" name="name" id="name" />
+            </div>
+            <div class="form-grp">
+              <label class="label" for="mail">Mail </label><br />
+              <input class="input" type="email" name="mail" id="mail" />
+            </div>
+            <div class="form-grp">
+              <label class="label" for="Message">Message</label><br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+          <button class="btn btn-white">Submit</button>
+        </div>
+      </section>
+
+      <div id="features" class="contact-features">
+        <div class="feature-location">
+          <div>
+            <i class="fa-solid fa-hotel fa-3x"></i>
+            <h3 class="fetures-heading contact-h-bellow">Location</h3>
+          </div>
+
+          <p class="features-subheading">50 Main st, Boston MA</p>
+        </div>
+        <div class="feature-meals phone">
+          <i class="fa-solid fa-phone fa-3x"></i>
+
+          <h3 class="fetures-heading contact-h-bellow">Phone Number</h3>
+          <p class="features-subheading">(617) 555-5555</p>
+        </div>
+        <div class="feature-room">
+          <i class="fa-solid fa-envelope fa-3x"></i>
+
+          <h3 class="fetures-heading contact-h-bellow">Email Address</h3>
+          <p class="features-subheading">frontdesk@hotelbt.co</p>
+        </div>
+      </div>
+      <footer id="main-footer">Hotel BT © 2019, All RIghts Reserved</footer>
+    </div>
+  </body>
+</html>

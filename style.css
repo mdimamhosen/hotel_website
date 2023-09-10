@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  width: 100%;
+  background-color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#nav-bar {
+  height: 5.5vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar-link {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-bar-heading h1 a {
+  color: #fff;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.nav-bar-heading h1 a:hover {
+  color: #f7c08a;
+}
+.nav-bar-heading h1:hover {
+  scale: 1.1;
+}
+.nav-bar-heading h1 {
+  transition: all 0.5s;
+}
+.nav-bar-link div a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+}
+.nav-bar-link div a:hover {
+  color: #f7c08a;
+  transition: all 0.8s;
+}
+#showcase {
+  overflow: scroll;
+  background: url(./image-resources/image_resources/showcase.jpg) no-repeat
+    center center/cover;
+
+  color: white;
+  /* height: 65vh; */
+}
+.showcasecontent {
+  height: 100%;
+}
+#showcase .show-case-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10em;
+  /* gap: 1.5em; */
+}
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+ 
+} */
+#showcase .show-case-content h1 {
+  font-size: 3.5em;
+  padding-bottom: 0.7em;
+  line-height: 1em;
+}
+/* #showcase .show-case-content a*/
+.heading-special {
+  color: #f7c08a;
+}
+.showcase-subheading {
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.5em;
+  padding-bottom: 1.5em;
+}
+#showcase .show-case-content .btn a {
+  color: white;
+}
+.btn {
+  font-size: 1.2em;
+  /* color: #fff; */
+  background: #333;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  transition: 1s;
+  margin-bottom: 3em;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+  transform: scale(1.1);
+}
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+  padding: 1em 1em;
+}
+.btn-light:hover {
+  background: #434141;
+  color: #f4f4f4;
+}
+#home-info {
+  /* height: 38vh; */
+  width: 100%;
+  display: flex;
+}
+.info-img {
+  background: url(./hotel-website/hotel_website/img/photo-1.jpg) no-repeat
+    center center/cover;
+  width: 100%;
+}
+
+.info-content {
+  padding: 1em;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.info-subheading {
+  width: 90%;
+}
+#features {
+  width: 100%;
+  /* height: 30vh; */
+  display: flex;
+}
+.feature-location {
+  padding: 2rem;
+  text-align: center;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.feature-meals {
+  padding: 2rem;
+  background: #f7c08a;
+  text-align: center;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.feature-room {
+  padding: 2rem;
+  text-align: center;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#main-footer {
+  /* height: 6vh; */
+  background-color: #333;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 0.6%;
+}
+/* Add the following CSS at the end of your existing CSS */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #showcase .show-case-content h1 {
+    font-size: 2.5em;
+  }
+
+  .showcase-subheading {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  #showcase .show-case-content h1 {
+    font-size: 2em;
+  }
+
+  .showcase-subheading {
+    font-size: 0.9em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 0.4em 0.8em;
+  }
+}
+
+/* about page css */
+
+/* about info   */
+
+/* #about-info {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-info-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
+.about-info-left {
+  width: 70%;
+ 
+}
+.about-info-right {
+  width: 30%;
+  padding: -1em;
+}
+.about-info-right .about-info-img {
+  width: 100%;
+  border-radius: 50%;
+} */
+/* _______ */
+/* .l-heading {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.l-subheading {
+  width: 90%;
+} */
+/* _______ */
+#about-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.about-info-container {
+  width: 100%;
+  display: flex;
+  /* Added to ensure responsiveness */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+}
+
+.about-info-left {
+  width: 100%; /* Full width on small screens */
+  padding: 2em;
+  text-align: center; /* Center text on small screens */
+}
+
+.about-info-right {
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  transition: all 0.7s;
+}
+.about-info-right:hover {
+  scale: 1.05;
+}
+
+.about-info-right .about-info-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.l-heading {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.l-subheading {
+  width: 90%;
+  text-align: center;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+  .about-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-info-right .about-info-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0%;
+  }
+}
+.about-info-left,
+.about-info-right {
+  width: 100%;
+}
+#testimornials {
+  background: url(./hotel-website/hotel_website/img/test-bg.jpg) no-repeat
+    center center/cover;
+}
+.testimornial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+.testimornial-heading {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  color: #fff;
+}
+.testimornial {
+  background: rgba(247, 192, 138, 0.9);
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  transition: all 0.8s;
+}
+.testimornial:hover {
+  transform: scale(1.03);
+}
+.testimornial-img {
+  max-width: 4.5em;
+  border-radius: 50%;
+}
+.testimornial-subheading {
+  font-size: 1em;
+
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.contact-features {
+  background-color: #272424;
+  color: #f4f4f4;
+}
+.phone {
+  background-color: #272424;
+}
+.contact-h-bellow {
+  margin-bottom: 1em;
+}
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.btn-white {
+  color: #fff;
+}
+
+.contact-heading {
+  font-size: 2.5em;
+  /* text-align: center; */
+  /* margin-bottom: 1em; */
+  line-height: 1.5em;
+  color: #333;
+}
+.contact-subheading {
+  font-size: 1.1em;
+  font-weight: 500;
+  /* text-align: center; */
+  color: #666;
+  margin-bottom: 1em;
+}
+.form-grp {
+  margin-bottom: 1.5em;
+}
+.label {
+  font-size: 1.2em;
+  color: #333;
+}
+.input {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333; /* Dark text color */
+  resize: vertical;
+}
+.btn-white {
+  background-color: #333;
+  color: #f7c08a; /* Dark text color */
+  padding: 1em 2em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.7s, color 0.3s;
+}
+
+.btn-white:hover {
+  background-color: #f7c08a;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1em;
+  }
+
+  .contact-heading {
+    font-size: 1.5em;
+  }
+
+  .contact-subheading {
+    font-size: 1em;
+  }
+
+  .label {
+    font-size: 1em;
+  }
+
+  .input,
+  textarea {
+    font-size: 0.9em;
+  }
+
+  .btn-primary {
+    font-size: 1em;
+  }
+}
